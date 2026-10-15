@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BackendDotNet.Api/BackendDotNet.Api.csproj" />
+  <Project Path="BackendDotNet.Application/BackendDotNet.Application.csproj" />
+  <Project Path="BackendDotNet.Domain/BackendDotNet.Domain.csproj" />
+  <Project Path="BackendDotNet.Infrastructure/BackendDotNet.Infrastructure.csproj" />
+</Solution>
