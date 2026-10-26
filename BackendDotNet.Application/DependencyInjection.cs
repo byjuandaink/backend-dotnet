@@ -1,4 +1,5 @@
 ﻿using BackendDotNet.Application.Abstractions.Messaging;
+using FluentValidation; 
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BackendDotNet.Application;
@@ -20,6 +21,8 @@ public static class DependencyInjection
 
         foreach (var (service, implementation) in registrations)
             services.AddScoped(service, implementation);
+
+        services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
 
         return services;
     }

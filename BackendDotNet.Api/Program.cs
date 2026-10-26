@@ -1,3 +1,4 @@
+using BackendDotNet.Api.Endpoints;
 using BackendDotNet.Application;
 using BackendDotNet.Infrastructure;
 
@@ -15,5 +16,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.MapContactEndpoints();
 
 app.Run();
