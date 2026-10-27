@@ -10,6 +10,8 @@ public class ApplicationDbContext : DbContext
     {
     }
 
+    public DbSet<Contact> Contacts => Set<Contact>();
+
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Supplier> Suppliers => Set<Supplier>();
     public DbSet<Product> Products => Set<Product>();
