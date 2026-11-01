@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using BackendDotNet.Application.Abstractions.Email;
 using BackendDotNet.Infrastructure.Email;
+    
 
 namespace BackendDotNet.Infrastructure;
 
